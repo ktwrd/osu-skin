@@ -40,13 +40,13 @@
 | default-7.png                 | IJM Yamashiro V2            |
 | default-8.png                 | IJM Yamashiro V2            |
 | default-9.png                 | IJM Yamashiro V2            |
-| drum-hitclap.wav              | Comfort                     |
-| drum-hitfinish.wav            | Comfort                     |
-| drum-hitnormal.wav            | Comfort                     |
-| drum-hitwhistle.wav           | Comfort                     |
-| drum-sliderslide.wav          | Comfort                     |
-| drum-slidertick.wav           | Comfort                     |
-| drum-sliderwhistle.wav        | Comfort                     |
+| drum-hitclap.wav              | IJM Yamashiro V2            |
+| drum-hitfinish.wav            | IJM Yamashiro V2            |
+| drum-hitnormal.wav            | IJM Yamashiro V2            |
+| drum-hitwhistle.wav           | IJM Yamashiro V2            |
+| drum-sliderslide.wav          | IJM Yamashiro V2            |
+| drum-slidertick.wav           | IJM Yamashiro V2            |
+| drum-sliderwhistle.wav        | IJM Yamashiro V2            |
 | fail-background.png           | Custom                      |
 | followpoint-0.png             | Empty File                  |
 | followpoint-1.png             | Empty File                  |
@@ -188,13 +188,13 @@
 | mode-taiko-small.png          | Comfort                     |
 | mode-taiko.png                | Comfort                     |
 | multi-skipped.png             | Comfort                     |
-| normal-hitclap.wav            | Comfort                     |
-| normal-hitfinish.wav          | Comfort                     |
-| normal-hitnormal.wav          | Comfort                     |
-| normal-hitwhistle.wav         | Comfort                     |
-| normal-sliderslide.wav        | Comfort                     |
-| normal-slidertick.wav         | Comfort                     |
-| normal-sliderwhistle.wav      | Comfort                     |
+| normal-hitclap.wav            | IJM Yamashiro V2                     |
+| normal-hitfinish.wav          | IJM Yamashiro V2                     |
+| normal-hitnormal.wav          | IJM Yamashiro V2                     |
+| normal-hitwhistle.wav         | IJM Yamashiro V2                     |
+| normal-sliderslide.wav        | IJM Yamashiro V2     |
+| normal-slidertick.wav         | IJM Yamashiro V2     |
+| normal-sliderwhistle.wav      | IJM Yamashiro V2     |
 | outer2D.png                   | Comfort                     |
 | outerD.png                    | Comfort                     |
 | particle100.png               | Empty File                  |
@@ -311,13 +311,13 @@
 | sliderendcircle.png           | Empty File                  |
 | sliderfollowcircle.png        | Comfort                     |
 | sliderscorepoint.png          | Comfort                     |
-| soft-hitclap.wav              | Comfort                     |
-| soft-hitfinish.wav            | Comfort                     |
-| soft-hitnormal.wav            | Comfort                     |
-| soft-hitwhistle.wav           | Comfort                     |
-| soft-sliderslide.wav          | Empty File                  |
-| soft-slidertick.wav           | Comfort                     |
-| soft-sliderwhistle.wav        | Empty File                  |
+| soft-hitclap.wav              | IJM Yamashiro V2     |
+| soft-hitfinish.wav            | IJM Yamashiro V2     |
+| soft-hitnormal.wav            | IJM Yamashiro V2     |
+| soft-hitwhistle.wav           | IJM Yamashiro V2     |
+| soft-sliderslide.wav          | IJM Yamashiro V2  |
+| soft-slidertick.wav           | IJM Yamashiro V2     |
+| soft-sliderwhistle.wav        | IJM Yamashiro V2 |
 | spinner-approachcircle.png    | Comfort                     |
 | spinner-background.png        | Custom                      |
 | spinner-bottom.png            | Comfort                     |
@@ -339,10 +339,10 @@
 | taiko-bar-left.png            | Comfort                     |
 | taiko-bar-right-glow.png      | Comfort                     |
 | taiko-bar-right.png           | Comfort                     |
-| taiko-drum-hitclap.wav        | Comfort                     |
-| taiko-drum-hitfinish.wav      | Comfort                     |
-| taiko-drum-hitnormal.wav      | Comfort                     |
-| taiko-drum-hitwhistle.wav     | Comfort                     |
+| taiko-drum-hitclap.wav        | IJM Yamashiro V2     |
+| taiko-drum-hitfinish.wav      | IJM Yamashiro V2     |
+| taiko-drum-hitnormal.wav      | IJM Yamashiro V2     |
+| taiko-drum-hitwhistle.wav     | IJM Yamashiro V2     |
 | taiko-drum-inner.png          | Comfort                     |
 | taiko-drum-outer.png          | Comfort                     |
 | taiko-flower-group.png        | Empty File                  |
@@ -353,18 +353,18 @@
 | taiko-hit300.png              | Comfort                     |
 | taiko-hit300g.png             | Comfort                     |
 | taiko-hit300k.png             | Comfort                     |
-| taiko-normal-hitclap.wav      | Comfort                     |
-| taiko-normal-hitfinish.wav    | Comfort                     |
-| taiko-normal-hitnormal.wav    | Comfort                     |
-| taiko-normal-hitwhistle.wav   | Comfort                     |
+| taiko-normal-hitclap.wav      | IJM Yamashiro V2     |
+| taiko-normal-hitfinish.wav    | IJM Yamashiro V2     |
+| taiko-normal-hitnormal.wav    | IJM Yamashiro V2     |
+| taiko-normal-hitwhistle.wav   | IJM Yamashiro V2     |
 | taiko-roll-end.png            | Comfort                     |
 | taiko-roll-middle.png         | Comfort                     |
 | taiko-slider-fail.png         | Comfort                     |
 | taiko-slider.png              | Comfort                     |
-| taiko-soft-hitclap.wav        | Comfort                     |
-| taiko-soft-hitfinish.wav      | Comfort                     |
-| taiko-soft-hitnormal.wav      | Comfort                     |
-| taiko-soft-hitwhistle.wav     | Comfort                     |
+| taiko-soft-hitclap.wav        | IJM Yamashiro V2     |
+| taiko-soft-hitfinish.wav      | IJM Yamashiro V2     |
+| taiko-soft-hitnormal.wav      | IJM Yamashiro V2     |
+| taiko-soft-hitwhistle.wav     | IJM Yamashiro V2     |
 | taikobigcircle.png            | Comfort                     |
 | taikobigcircleoverlay.png     | Comfort                     |
 | taikohitcircle.png            | Comfort                     |
