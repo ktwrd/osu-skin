@@ -128,14 +128,16 @@
 | mania-hit300g-1.png           | - c r y s t a l l i z e d - |
 | mania-hit300g-2.png           | - c r y s t a l l i z e d - |
 | mania-hit50.png               | - c r y s t a l l i z e d - |
-| mania-key1.png                | - YUGEN FINAL WS -          |
-| mania-key1D.png               | - YUGEN FINAL WS -          |
-| mania-key2.png                | - YUGEN FINAL WS -          |
-| mania-key2D.png               | - YUGEN FINAL WS -          |
-| mania-keyS.png                | - YUGEN FINAL WS -          |
-| mania-keySD.png               | - YUGEN FINAL WS -          |
-| mania-keyTURN.png             | - YUGEN FINAL WS -          |
-| mania-keyTURND.png            | - YUGEN FINAL WS -          |
+| mania-key1.png                | aetrnaaberrateFujiwara v2   |
+| mania-keyAM.png               | aetrnaaberrateFujiwara v2   |
+| mania-keyAZU.png              | aetrnaaberrateFujiwara v2   |
+| mania-keyCEL.png              | aetrnaaberrateFujiwara v2   |
+| mania-keyNAR.png              | aetrnaaberrateFujiwara v2   |
+| mania-keyROJ.png              | aetrnaaberrateFujiwara v2   |
+| mania-keyROS.png              | aetrnaaberrateFujiwara v2   |
+| mania-keyVER.png              | aetrnaaberrateFujiwara v2   |
+| mania-keyVERcl.png            | aetrnaaberrateFujiwara v2   |
+| mania-keyVIO.png              | aetrnaaberrateFujiwara v2   |
 | mania-note1.png               | - P E N D U A L -           |
 | mania-note1H.png              | - P E N D U A L -           |
 | mania-note1L-0.png            | - P E N D U A L -           |
@@ -166,8 +168,8 @@
 | mania-noteSL-5.png            | - P E N D U A L -           |
 | mania-noteSL-6.png            | - P E N D U A L -           |
 | mania-noteSL-7.png            | - P E N D U A L -           |
-| mania-stage-bottom.png        | - YUGEN FINAL WS -          |
-| mania-stage-hint.png          | - YUGEN FINAL WS -          |
+| mania-stage-bottom.png        | None                        |
+| mania-stage-hint.png          | None                        |
 | mania-stage-left.png          | - YUGEN FINAL WS -          |
 | mania-stage-light.png         | - YUGEN FINAL WS -          |
 | mania-stage-right.png         | - YUGEN FINAL WS -          |
@@ -188,13 +190,13 @@
 | mode-taiko-small.png          | Comfort                     |
 | mode-taiko.png                | Comfort                     |
 | multi-skipped.png             | Comfort                     |
-| normal-hitclap.wav            | IJM Yamashiro V2                     |
-| normal-hitfinish.wav          | IJM Yamashiro V2                     |
-| normal-hitnormal.wav          | IJM Yamashiro V2                     |
-| normal-hitwhistle.wav         | IJM Yamashiro V2                     |
-| normal-sliderslide.wav        | IJM Yamashiro V2     |
-| normal-slidertick.wav         | IJM Yamashiro V2     |
-| normal-sliderwhistle.wav      | IJM Yamashiro V2     |
+| normal-hitclap.wav            | IJM Yamashiro V2            |
+| normal-hitfinish.wav          | IJM Yamashiro V2            |
+| normal-hitnormal.wav          | IJM Yamashiro V2            |
+| normal-hitwhistle.wav         | IJM Yamashiro V2            |
+| normal-sliderslide.wav        | IJM Yamashiro V2            |
+| normal-slidertick.wav         | IJM Yamashiro V2            |
+| normal-sliderwhistle.wav      | IJM Yamashiro V2            |
 | outer2D.png                   | Comfort                     |
 | outerD.png                    | Comfort                     |
 | particle100.png               | Empty File                  |
