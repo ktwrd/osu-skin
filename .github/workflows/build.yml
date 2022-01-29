@@ -12,7 +12,7 @@ jobs:
 
       - name: Generate Release Name
         id: create_name
-        run: node scripts/createname.js
+        run: npm --silent run createname
   mktag:
     needs: generatename
     
@@ -52,7 +52,7 @@ jobs:
       - run: npm install
       
       - name: Build Skin
-        run: node scripts/build.js
+        run: npm run --silent build
       
   publish:
     needs: [mktag, generatename, create]

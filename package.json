@@ -8,5 +8,9 @@
     "type": "git",
     "url": "git+https://github.com/ktwrd/osu-skin.git"
   },
-  "author": "kate <bork@kate.pet>"
+  "author": "kate <bork@kate.pet>",
+  "scripts": {
+    "build": "node scripts/build.js",
+    "createname": "node scripts/createname.js"
+  }
 }
