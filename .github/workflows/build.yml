@@ -2,7 +2,7 @@ name: Build Skin
 on: workflow_dispatch
 jobs:
   generatename:
-    runs-on: [self-hosted, ubuntu-latest]
+    runs-on: [ubuntu-latest]
     outputs:
       gname: ${{ steps.create_name.outputs }}
     steps:
@@ -19,7 +19,7 @@ jobs:
   mktag:
     needs: generatename
     
-    runs-on: [self-hosted, ubuntu-latest]
+    runs-on: [ubuntu-latest]
     
     outputs:
       upload_url: ${{ steps.create_release.outputs.upload_url }}
@@ -42,7 +42,7 @@ jobs:
           prerelease: false
       
   create:
-    runs-on: [self-hosted, ubuntu-latest]
+    runs-on: [ubuntu-latest]
 
     steps:
       - uses: actions/checkout@master
@@ -61,7 +61,7 @@ jobs:
   publish:
     needs: [mktag, generatename, create]
   
-    runs-on: [self-hosted, ubuntu-latest]
+    runs-on: [ubuntu-latest]
     
     permissions: write-all
     
