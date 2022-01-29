@@ -1,0 +1,80 @@
+name: Build Skin
+on: workflow_dispatch
+jobs:
+  generatename:
+    runs-on: [self-hosted, ubuntu-latest]
+    outputs:
+      gname: ${{ steps.create_name.outputs }}
+    steps:
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 16
+          
+      - run: npm i -g npm@latest-8
+      - run: npm install
+
+      - name: Generate Release Name
+        id: create_name
+        run: echo "::set-output name=RESULT::$(node scripts/createname.js)"
+  mktag:
+    needs: generatename
+    
+    runs-on: [self-hosted, ubuntu-latest]
+    
+    outputs:
+      upload_url: ${{ steps.create_release.outputs.upload_url }}
+      web_url: ${{ steps.create_release.outputs.html_url }}
+    
+    permissions: write-all
+    
+    steps:
+      - uses: actions/checkout@master
+          
+      - name: Create Release Draft
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ needs.generatename.outputs.gname }}
+          release_name: ${{ needs.generatename.outputs.gname }}
+          draft: false
+          prerelease: false
+      
+  create:
+    runs-on: [self-hosted, ubuntu-latest]
+
+    steps:
+      - uses: actions/checkout@master
+        
+      - name: Install Node.js, and NPM
+        uses: actions/setup-node@v1
+        with:
+          node-version: 16
+          
+      - run: npm i -g npm@latest-8
+      - run: npm install
+      
+      - name: Build Skin
+        run: node scripts/build.js
+      
+  publish:
+    needs: [mktag, generatename, create]
+  
+    runs-on: [self-hosted, ubuntu-latest]
+    
+    permissions: write-all
+    
+    steps:
+      - name: Check out Git Repo
+        uses: actions/checkout@master
+        
+      - name: Upload Skin to Github Release
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ needs.mktag.outputs.upload_url }}
+          asset_path: ./dist/skin.osk
+          asset_name: skin-${{ needs.generatename.outputs.gname }}.osk
+          asset_content_type: application/octet-stream
