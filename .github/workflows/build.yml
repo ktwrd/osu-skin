@@ -6,7 +6,6 @@ jobs:
     outputs:
       gname: ${{ steps.create_name.outputs.stdout }}
     steps:
-      - uses: actions/checkout@master
       - uses: actions/setup-node@v1
         with:
           node-version: 16
