@@ -9,8 +9,6 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 16
-          
-      - run: npm install
 
       - name: Generate Release Name
         id: create_name
