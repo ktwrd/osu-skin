@@ -13,7 +13,7 @@ jobs:
 
       - name: Generate Release Name
         id: create_name
-        run: echo "::set-output name=stdout::npm --silent run createname"
+        run: echo "::set-output name=stdout::$(npm --silent run createname)"
   mktag:
     needs: generatename
     
@@ -26,8 +26,6 @@ jobs:
     permissions: write-all
     
     steps:
-      - uses: actions/checkout@master
-          
       - name: Create Release Draft
         id: create_release
         uses: actions/create-release@v1
@@ -68,5 +66,5 @@ jobs:
         with:
           upload_url: ${{ needs.mktag.outputs.upload_url }}
           asset_path: ./dist/skin.osk
-          asset_name: skin-${{ needs.generatename.outputs.gname }}.osk
+          asset_name: seeds_skin-${{ needs.generatename.outputs.gname }}.osk
           asset_content_type: application/octet-stream
