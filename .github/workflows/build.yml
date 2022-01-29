@@ -13,7 +13,7 @@ jobs:
 
       - name: Generate Release Name
         id: create_name
-        run: npm --silent run createname
+        run: echo "::set-output name=stdout::npm --silent run createname"
   mktag:
     needs: generatename
     
@@ -39,11 +39,17 @@ jobs:
           draft: false
           prerelease: false
       
-  create:
+  publish:
+    needs: [mktag, generatename]
+  
     runs-on: [ubuntu-latest]
-
+    
+    permissions: write-all
+    
     steps:
-      - uses: actions/checkout@master
+      - name: Check out Git Repo
+        uses: actions/checkout@master
+        
         
       - name: Install Node.js, and NPM
         uses: actions/setup-node@v1
@@ -54,17 +60,6 @@ jobs:
       
       - name: Build Skin
         run: npm run --silent build
-      
-  publish:
-    needs: [mktag, generatename, create]
-  
-    runs-on: [ubuntu-latest]
-    
-    permissions: write-all
-    
-    steps:
-      - name: Check out Git Repo
-        uses: actions/checkout@master
         
       - name: Upload Skin to Github Release
         uses: actions/upload-release-asset@v1
