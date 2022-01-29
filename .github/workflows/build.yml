@@ -4,7 +4,7 @@ jobs:
   generatename:
     runs-on: [ubuntu-latest]
     outputs:
-      gname: ${{ steps.create_name.outputs }}
+      gname: ${{ join(steps.create_name.outputs.*, '') }}
     steps:
       - uses: actions/setup-node@v1
         with:
