@@ -1,5 +1,12 @@
 {
   "dependencies": {
     "archiver": "^5.3.0"
-  }
+  },
+  "name": "osu-skin",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ktwrd/osu-skin.git"
+  },
+  "author": "kate <bork@kate.pet>"
 }
