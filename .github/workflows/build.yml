@@ -10,7 +10,6 @@ jobs:
         with:
           node-version: 16
           
-      - run: npm i -g npm@latest-8
       - run: npm install
 
       - name: Generate Release Name
@@ -52,7 +51,6 @@ jobs:
         with:
           node-version: 16
           
-      - run: npm i -g npm@latest-8
       - run: npm install
       
       - name: Build Skin
