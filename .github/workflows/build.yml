@@ -12,7 +12,10 @@ jobs:
 
       - name: Generate Release Name
         id: create_name
-        run: echo "::set-output name=stdout::$(npm --silent run createname)"
+        run: echo "::set-output name=stdout::$(npm run createname --silent)"
+        
+      - name: test
+        run: echo ${{ steps.create_name.outputs.stdout }}
   mktag:
     needs: generatename
     
