@@ -3,8 +3,6 @@ on: workflow_dispatch
 jobs:
   generatename:
     runs-on: [ubuntu-latest]
-    outputs:
-      gname: ${{ steps.create_name.outputs.stdout }}
     steps:
       - uses: actions/setup-node@v1
         with:
@@ -12,7 +10,8 @@ jobs:
 
       - name: Generate Release Name
         id: create_name
-        run: echo "::set-output name=stdout::$(npm run createname --silent)"
+        run: |
+          echo "::set-output name=TAG_NAME::$(npm run createname --silent)"
         
       - name: test
         run: echo "::debug::$(npm run createname --silent)"
@@ -34,8 +33,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tag_name: ${{ needs.generatename.outputs.gname }}
-          release_name: ${{ needs.generatename.outputs.gname }}
+          tag_name: ${{ steps.generatename.outputs.TAG_NAME }}
+          release_name: ${{ steps.generatename.outputs.TAG_NAME }}
           draft: false
           prerelease: false
       
@@ -68,5 +67,5 @@ jobs:
         with:
           upload_url: ${{ needs.mktag.outputs.upload_url }}
           asset_path: ./dist/skin.osk
-          asset_name: seeds_skin-${{ needs.generatename.outputs.gname }}.osk
+          asset_name: seeds_skin-${{ steps.generatename.outputs.TAG_NAME }}.osk
           asset_content_type: application/octet-stream
