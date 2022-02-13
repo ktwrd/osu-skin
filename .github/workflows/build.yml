@@ -11,7 +11,7 @@ jobs:
       - name: Generate Release Name
         id: create_name
         run: |
-          echo "::set-output name=TAG_NAME::$(npm run createname --silent)"
+          echo ::set-env name=TAG_NAME::$(npm run createname --silent)
         
       - name: test
         run: echo "::debug::$(npm run createname --silent)"
@@ -33,8 +33,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tag_name: ${{ steps.generatename.outputs.TAG_NAME }}
-          release_name: ${{ steps.generatename.outputs.TAG_NAME }}
+          tag_name: ${{ env.TAG_NAME }}
+          release_name: ${{ env.TAG_NAME }}
           draft: false
           prerelease: false
       
@@ -67,5 +67,5 @@ jobs:
         with:
           upload_url: ${{ needs.mktag.outputs.upload_url }}
           asset_path: ./dist/skin.osk
-          asset_name: seeds_skin-${{ steps.generatename.outputs.TAG_NAME }}.osk
+          asset_name: seeds_skin-${{ env.TAG_NAME }}.osk
           asset_content_type: application/octet-stream
