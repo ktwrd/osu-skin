@@ -11,7 +11,7 @@ jobs:
       - name: Generate Release Name
         id: create_name
         run: |
-          echo ::set-env name=TAG_NAME::$(npm run createname --silent)
+          echo "::set-env name=TAG_NAME::$(npm run createname --silent)"
         
       - name: test
         run: echo "::debug::$(npm run createname --silent)"
