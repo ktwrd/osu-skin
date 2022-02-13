@@ -47,7 +47,7 @@
 | drum-sliderslide.wav          | IJM Yamashiro V2            |
 | drum-slidertick.wav           | IJM Yamashiro V2            |
 | drum-sliderwhistle.wav        | IJM Yamashiro V2            |
-| fail-background.png           | Custom                      |
+| fail-background.png           | Stepmania Ultralight        |
 | followpoint-0.png             | Empty File                  |
 | followpoint-1.png             | Empty File                  |
 | followpoint-2.png             | Empty File                  |
@@ -202,11 +202,11 @@
 | particle100.png               | Empty File                  |
 | particle300.png               | Empty File                  |
 | particle50.png                | Empty File                  |
-| pause-back.png                | Empty File                  |
-| pause-continue.png            | Empty File                  |
-| pause-overlay.png             | Custom                      |
-| pause-replay.png              | Comfort                     |
-| pause-retry.png               | Empty File                  |
+| pause-back.png                | Stepmania Ultralight        |
+| pause-continue.png            | Stepmania Ultralight        |
+| pause-overlay.png             | Stepmania Ultralight        |
+| pause-replay.png              | Stepmania Ultralight        |
+| pause-retry.png               | Stepmania Ultralight        |
 | pippidonclear.png             | Empty File                  |
 | pippidonfail.png              | Empty File                  |
 | pippidonidle.png              | Empty File                  |
